@@ -1,60 +1,56 @@
 # AISSM_BH
-**AI-Powered Molecular Dynamics Simulation Assistant**
+**人工智能驱动的分子动力学模拟助手**
 
-**AISSM_BH** — Elevating GROMACS simulations from manual workflows to intelligent automation.
+**AISSM_BH—将GROMACS模拟从手动流程提升至智能自动化。
 
-Bid farewell to repetitive command-line operations and prolonged error debugging.  
-The AI-driven molecular dynamics assistant developed by BHAI Team (Baihong Group) now delivers professional, stable, and fully automated simulation experiences. 🧬🤖
+告别重复的命令行操作和漫长的错误调试。  
+由BHAI团队（百宏集团）开发的AI驱动分子动力学助手，现已提供专业、稳定且完全自动化的模拟体验。
 
 ---
 
-## Project Introduction
+##项目简介
 
-**AISSM_BH** is an AI-powered molecular dynamics simulation assistant developed by BHAI Team (Baihong Group). Built upon the GROMACS engine, it enables users to complete the entire simulation workflow for proteins and protein-ligand complexes through natural language instructions. The workflow includes topology generation, solvation, energy minimization, NVT/NPT equilibration, production molecular dynamics runs, trajectory analysis (RMSD, RMSF, radius of gyration, hydrogen bonding, secondary structure), and MM-PBSA/GBSA binding free energy calculations.
+**AISSM_BH**是由BHAi团队（百宏集团）开发的基于人工智能的分子动力学模拟助手。它以GROMACS引擎为基础，支持用户通过自然语言指令完成蛋白质及蛋白-配体复合物的整个模拟流程。工作流程包括拓扑生成、溶剂化处理、能量最小化、NVT/NPT平衡、生产分子动力学模拟、轨迹分析（RMSD、RMSF、回转半径、氢键、二级结构），以及MM-PBSA/GBSA结合自由能计算。
 
-The tool supports two operational modes: **Copilot (advisory mode)** and **Agent (autonomous mode)**. It is compatible with major large language models including OpenAI, DeepSeek, and Gemini, and provides an MCP (Model Context Protocol) server interface for seamless integration with AI development environments such as Claude Desktop and Cursor.
+该工具支持两种运行模式：**Copilot（咨询模式）和Agent（自主模式）。它兼容包括OpenAI、DeepSeek和Gemini在内的主流大型语言模型，并提供MCP（模型上下文协议）服务器接口，可与Claude Desktop和Cursor等人工智能开发环境无缝集成。
 
-**Core Strengths**: Professional, reproducible, and efficient — ensuring reliable results for every simulation.
+**：专业、可重复且高效——确保每次模拟都能获得可靠的结果。
 
 ---
 
 ## Key Features
 
-- **Intelligent Skill Routing**: Automatically detects user intent and dynamically switches between specialized skills for protein simulation, protein-ligand complex preparation, trajectory analysis, and MM-PBSA calculations.
-- **End-to-End Automation**: Completes the full pipeline from input PDB file to comprehensive analysis report with a single prompt.
-- **Multi-Model Support**: Compatible with OpenAI, DeepSeek, Gemini, and any OpenAI-compatible API endpoints.
-- **YAML Configuration**: Manage parameters across multiple projects with clear priority hierarchy (command-line > environment variables > YAML file > defaults).
-- **Dynamic MCP Tool Registration**: Tool schemas automatically synchronize with the active skill, enabling deep integration with modern AI coding assistants.
+**：自动检测用户意图，并在蛋白质模拟、蛋白质-配体复合物准备、轨迹分析和MM-PBSA计算等专业技能之间动态切换。
+**：只需一次提示，即可完成从输入PDB文件到生成全面分析报告的完整流程。
+**：兼容OpenAI、DeepSeek、Gemini以及任何与OpenAI兼容的API端点。
+：通过清晰的优先级层次结构管理多个项目中的参数（命令行 > 环境变量 > YAML文件 > 默认值）。
+**：工具模式与当前技能自动同步，实现与现代AI编码助手的深度集成。
 
 ---
 
-## Installation
+##安装
 
 ```bash
-# Create an isolated virtual environment (recommended)
+# 创建一个隔离的虚拟环境（推荐）
 python -m venv AISSM_BH_env
 source AISSM_BH_env/bin/activate
 
-# Install via pip
+# 通过pip安装
 pip install git+https://github.com/lsnfa/AISSM_BH.git
 
-# Development installation (editable mode)
-git clone https://github.com/lsnfa/AISSM_BH.git
-cd AISSM_BH
-pip install -e .
 
-# Optional: For protein-ligand complex simulations
+# 可选：用于蛋白质-配体复合物模拟
 conda install -c conda-forge acpype
 
-# Optional: For MM-PBSA/GBSA binding free energy calculations
+# 可选：用于MM-PBSA/GBSA结合自由能计算
 conda install -c conda-forge gmx_mmpbsa
 ```
 
 ---
 
-## Quick Start
+##快速入门
 
-### 1. Prepare Workspace and Input Structure
+###1. 准备工作区和输入结构
 
 ```bash
 mkdir md_workspace && cd md_workspace
