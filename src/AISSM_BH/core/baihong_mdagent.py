@@ -26,23 +26,23 @@ from AISSM_BH.utils.terminal import print_message, prompt_user
 
 参数
         ----------
-api_key : str，可选
+api_key : 字符串，可选
 用于LLM服务的API密钥。如果未提供，则从环境变量中读取。
-model : str，可选
+模型：字符串，可选
 要使用的模型名称。默认值为“gpt-4o”。
 工作区：字符串，可选
 工作区目录。默认为“./md_workspace”。
-url : str，可选
+url：字符串，可选
 LLM服务URL。默认为OpenAI端点。
-        mode : str, optional
-            Operation mode: "copilot" or "agent". Default is "copilot".
-        gmx_bin : str, optional
-            Path to GROMACS binary. Default is "gmx".
+mode : 字符串，可选
+操作模式：“副驾驶”或“代理”。默认为“副驾驶”。
+gmx_bin : 字符串，可选
+GROMACS 二进制文件的路径。默认值为“gmx”。 
         """
-        self.api_key = api_key or os.environ.get("OPENAI_API_KEY")
+self.api_key= api_key或os.environ.get("OPENAI_API_KEY")
         self.url = url
-        if not self.api_key:
-            raise ValueError("API key is required. Provide as parameter or set OPENAI_API_KEY environment variable")
+        如果 未self.api_key:
+            引发 ValueError("API密钥是必需的。请作为参数提供或设置OPENAI_API_KEY环境变量")
         
         self.model = model
         self.conversation_history = []
@@ -52,11 +52,11 @@ LLM服务URL。默认为OpenAI端点。
         self.mode = mode
         
         self.skill_router = SkillRouter(self.workspace, self.gmx_bin)
-        self.current_skill = self.skill_router.skill_classes["protein"](
+self.= 自我.skill_router.skill_classes["蛋白"
             self.workspace, self.gmx_bin
         )
         
-        logging.info(f"BH MD Agent initialized with model: {model}")
+logging.info(f"BH MD 代理已使用模型初始化：{model}")
 
     def switch_to_mmpbsa_skill(self) -> Dict[str, Any]:
         """
@@ -275,7 +275,7 @@ LLM服务URL。默认为OpenAI端点。
         
         elapsed = time.time() - start_time
         usage = response_json.get('usage', {})
-        print(f"\n[TEST] LLM call took {elapsed:.2f}s, "
+        print(f"\n[Record] LLM call took {elapsed:.2f}s, "
               f"prompt tokens: {usage.get('prompt_tokens', 'N/A')}, "
               f"completion tokens: {usage.get('completion_tokens', 'N/A')}, "
               f"total tokens: {usage.get('total_tokens', 'N/A')}\n", flush=True)
@@ -358,7 +358,7 @@ LLM服务URL。默认为OpenAI端点。
                     "content": f"Automatically switched to {self.current_skill.__class__.__name__}."
                 })
                 print(
-                    f"\n[TEST] Skill switched to: {self.current_skill.__class__.__name__}\n",
+                    f"\n[Record] Skill switched to: {self.current_skill.__class__.__name__}\n",
                     flush=True,
                 )
         
@@ -425,7 +425,7 @@ LLM服务URL。默认为OpenAI端点。
                     "content": f"Automatically switched to {self.current_skill.__class__.__name__}."
                 })
                 print(
-                    f"\n[TEST] Skill switched to: {self.current_skill.__class__.__name__}\n",
+                    f"\n[Record] Skill switched to: {self.current_skill.__class__.__name__}\n",
                     flush=True,
                 )
             
