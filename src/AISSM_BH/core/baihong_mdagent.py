@@ -1,39 +1,39 @@
 """
-Main MD Agent class for AISSM_BH
+AISSM_BH 的主 MD 代理类
 """
 
 import os
 import json
-import logging
-import requests
+导入logging
+导入requests
 from typing import List, Dict, Any, Optional, Union
 
-import time
+导入time
 
 from AISSM_BH.core.skill_router import SkillRouter
 from AISSM_BH.utils.terminal import print_message, prompt_user
-from AISSM_BH.config import SYSTEM_MESSAGE_ADVISOR, SYSTEM_MESSAGE_AGENT
+从AISSM_BH.config导入SYSTEM_MESSAGE_ADVISOR, SYSTEM_MESSAGE_AGENT
 
 
-class BHMDAgent:
-    """LLM-based agent for running molecular dynamics simulations with GROMACS"""
+类BHMDAgent:
+    “基于大语言模型的代理，用于使用GROMACS运行分子动力学模拟”
     
     def __init__(self, api_key: str = None, model: str = "gpt-4o",
                 workspace: str = "./md_workspace",
                 url: str = "https://api.openai.com/v1/chat/completions", mode: str = "copilot", gmx_bin: str = "gmx"):
         """
-        Initialize the BH MD Agent.
+初始化BH MD代理。
 
-        Parameters
+参数
         ----------
-        api_key : str, optional
-            API key for LLM service. If not provided, reads from environment.
-        model : str, optional
-            Model name to use. Default is "gpt-4o".
-        workspace : str, optional
-            Workspace directory. Default is "./md_workspace".
-        url : str, optional
-            LLM service URL. Default is OpenAI endpoint.
+api_key : str，可选
+用于LLM服务的API密钥。如果未提供，则从环境变量中读取。
+model : str，可选
+要使用的模型名称。默认值为“gpt-4o”。
+工作区：字符串，可选
+工作区目录。默认为“./md_workspace”。
+url : str，可选
+LLM服务URL。默认为OpenAI端点。
         mode : str, optional
             Operation mode: "copilot" or "agent". Default is "copilot".
         gmx_bin : str, optional
