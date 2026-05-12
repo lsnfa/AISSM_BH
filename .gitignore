@@ -1,0 +1,27 @@
+# Python 缓存
+__pycache__/
+*.pyc
+*.pyo
+
+# 虚拟环境
+AISSM_BH_test/
+venv/
+.venv/
+
+# 构建输出
+build/
+dist/
+*.egg-info/
+
+# 系统文件
+.DS_Store
+Thumbs.db
+*:Zone.Identifier
+
+# 日志与临时文件
+*.log
+*.mdp
+tmp/
+
+# 本地脚本
+clean.sh

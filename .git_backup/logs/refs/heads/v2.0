@@ -1,0 +1,3 @@
+0000000000000000000000000000000000000000 bbde609849aad9a7eb101fd78992ecb533abbd90 lsnfa <liangsnfa@163.com> 1778122522 +0800	branch: Created from HEAD
+bbde609849aad9a7eb101fd78992ecb533abbd90 47647d6c129e7a05a9010c10349ecc2b535057be lsnfa <liangsnfa@163.com> 1778122574 +0800	commit: AISSM_BH(gromacs copilotV2.0) - 完成重命名，项目可用
+47647d6c129e7a05a9010c10349ecc2b535057be 6b07f1918f9baacce9aed6c3cbb731159e6c28c4 lsnfa <liangsnfa@163.com> 1778143220 +0800	commit: V2.0 - 更新终端输出颜色与一些图标

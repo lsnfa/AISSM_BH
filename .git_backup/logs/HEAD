@@ -1,0 +1,16 @@
+0000000000000000000000000000000000000000 4aa9e59020a5954fb07a7ff81ae02c7d127550c3 liangs <liangs@WIN-20250801YGG.localdomain> 1775209537 +0800	clone: from github.com:ChatMol/gromacs_copilot.git
+4aa9e59020a5954fb07a7ff81ae02c7d127550c3 bbde609849aad9a7eb101fd78992ecb533abbd90 lsnfa <liangsnfang@gmail.com> 1776665452 +0800	commit: 初始提交：GROMACS Copilot 项目V1.0版本
+bbde609849aad9a7eb101fd78992ecb533abbd90 bbde609849aad9a7eb101fd78992ecb533abbd90 lsnfa <liangsnfa@163.com> 1778122522 +0800	checkout: moving from main to v2.0
+bbde609849aad9a7eb101fd78992ecb533abbd90 47647d6c129e7a05a9010c10349ecc2b535057be lsnfa <liangsnfa@163.com> 1778122574 +0800	commit: AISSM_BH(gromacs copilotV2.0) - 完成重命名，项目可用
+47647d6c129e7a05a9010c10349ecc2b535057be 6b07f1918f9baacce9aed6c3cbb731159e6c28c4 lsnfa <liangsnfa@163.com> 1778143220 +0800	commit: V2.0 - 更新终端输出颜色与一些图标
+6b07f1918f9baacce9aed6c3cbb731159e6c28c4 6b07f1918f9baacce9aed6c3cbb731159e6c28c4 lsnfa <liangsnfa@163.com> 1778483593 +0800	checkout: moving from v2.0 to v3.0
+6b07f1918f9baacce9aed6c3cbb731159e6c28c4 240a19a1b42620c875ea637e2126edafaeb81928 lsnfa <liangsnfa@163.com> 1778483594 +0800	commit: 重构项目为V3.0版本
+240a19a1b42620c875ea637e2126edafaeb81928 65c713a1815f73b8a45aa699b9b1b4bf4cb58fd5 lsnfa <liangsnfa@163.com> 1778484243 +0800	commit (amend): 重构项目为V3.0版本（含 .gitignore）
+65c713a1815f73b8a45aa699b9b1b4bf4cb58fd5 f605fb069f0685c45319e397065219d0c4220cf2 lsnfa <liangsnfa@163.com> 1778484668 +0800	commit (amend): 重构项目为V3.0版本
+f605fb069f0685c45319e397065219d0c4220cf2 9400932e68f1edcb3b7936622e947796685de24f lsnfa <liangsnfa@163.com> 1778486303 +0800	commit (amend): 重构项目为V3.0版本
+9400932e68f1edcb3b7936622e947796685de24f b12d4ee48aebb921be12388df32a3cdec26e8704 lsnfa <liangsnfa@163.com> 1778487805 +0800	commit (amend): 重构项目为V3.0版本
+b12d4ee48aebb921be12388df32a3cdec26e8704 965551cdab8777a2e22672a69d15c18092325213 lsnfa <liangsnfa@163.com> 1778488224 +0800	reset: moving to 965551cdab8777a2e22672a69d15c18092325213
+965551cdab8777a2e22672a69d15c18092325213 2e5863b32801b87ec7c55dc28a6b6990f6606c3c lsnfa <liangsnfa@163.com> 1778488243 +0800	commit: V3.0: 完整重构
+2e5863b32801b87ec7c55dc28a6b6990f6606c3c 2e5863b32801b87ec7c55dc28a6b6990f6606c3c lsnfa <liangsnfa@163.com> 1778488918 +0800	checkout: moving from v3.0 to v3.0-clean
+2e5863b32801b87ec7c55dc28a6b6990f6606c3c ad208f3173f780a36be2f19096323cc269c1e56f lsnfa <liangsnfa@163.com> 1778488984 +0800	commit: V3.0: 完整重构
+ad208f3173f780a36be2f19096323cc269c1e56f 1fb268f0cc51137f454ebfa937e58eac5066d838 lsnfa <liangsnfa@163.com> 1778566219 +0800	commit: AISSM_BH version

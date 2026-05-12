@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "AISSM_BH"
+version = "1.0.0"
+description = "AISSM_BH: An AI-powered molecular dynamics simulation assistant using GROMACS."
+authors = [
+    { name = "BHAI Team", email = "baihongai@163.com" }
+]
+readme = "README.md"
+license = { text = "GPL-3.0" }
+requires-python = ">=3.7"
+dependencies = [
+    "requests>=2.25.0",
+    "mcp>=1.4.1",
+    "pyyaml>=6.0",
+]
+
+[project.scripts]
+aissm_bh = "AISSM_BH.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/lsnfa/AISSM_BH"
+Repository = "https://github.com/lsnfa/AISSM_BH.git"
